@@ -1,6 +1,6 @@
 # EX.NO.6 SubQueries, Views and Joins 
 ### DATE
-## AIM
+## AIM:
 ### To use SubQueries, Views and Joins in SQL 
 ## Create employee Table
 ```sql
@@ -70,44 +70,51 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 
 ### QUERY:
+```sql
+SELECT ENAME FROM EMP WHERE SAL > (SELECT SAL FROM EMP WHERE EMPNO = 7566);
 
-
+```
 ### OUTPUT:
 
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
 ### QUERY:
-
-
+```sql
+SELECT ENAME, JOB, SAL FROM EMP WHERE SAL = (SELECT MIN(SAL) FROM EMP);
+```
 ### OUTPUT:
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
 
 ### QUERY:
-
-
+```sql
+SELECT ENAME, JOB FROM EMP WHERE DEPTNO = 10 AND JOB IN (SELECT JOB FROM EMP WHERE DEPTNO = 30);
+```
 ### OUTPUT:
 
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
 ### QUERY:
-
-
+```sql
+CREATE VIEW empv5 AS SELECT empno, ename, job FROM EMP WHERE deptno = 10;
+```
 ### OUTPUT:
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
 ### QUERY:
-
-
+```sql
+CREATE VIEW empv30 AS SELECT empno AS "Employee Number", ename AS "Employee Name", sal AS "Salary" FROM EMP WHERE deptno = 30;
+```
 ### OUTPUT:
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
 ### QUERY:
-
-
+```sql
+UPDATE empv5 SET sal = sal * 1.1 WHERE job = 'CLERK';
+```
 ### OUTPUT:
 
 ## Create a Customer1 Table
@@ -141,31 +148,42 @@ INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5003, 'Lauson
 ### Q7) Write a SQL query to find the salesperson and customer who reside in the same city. Return Salesman, cust_name and city.
 
 ### QUERY:
-
-
+```sql
+SELECT s.name AS Salesman1, c.cust_name, c.city FROM Salesman1 s INNER JOIN Customer1 c ON s.city = c.city;
+```
 ### OUTPUT:
 
 ### Q8) Write a SQL query to find salespeople who received commissions of more than 13 percent from the company. Return Customer Name, customer city, Salesman, commission.
 
 
 ### QUERY:
-
-
+```sql
+SELECT c.cust_name AS Customer_Name, c.city AS Customer_City, s.name AS Salesman, s.commission FROM Customer1 c JOIN Salesman1 s ON c.salesman_id = s.salesman_id WHERE s.commission > 0.13 ORDER BY s.name ASC;
+```
 ### OUTPUT:
 
 ### Q9) Perform Natural join on both tables
 
 ### QUERY:
+```sql
 
+SELECT * FROM Salesman1
+NATURAL JOIN Customer1;
 
+```
 ### OUTPUT:
 
 ### Q10) Perform Left and right join on both tables
 
 ### QUERY:
-
+```sql
+SELECT * FROM Customer1
+LEFT JOIN Salesman1 ON Customer1.salesman_id = Salesman1.salesman_id;
+SELECT * FROM Customer1
+RIGHT JOIN Salesman1 ON Customer1.salesman_id = Salesman1.salesman_id;
+```
 
 ### OUTPUT:
 
-## RESULT 
-### Thus the basics of subqueries,views,joins are performed in SQL.
+## RESULT: 
+Thus the basics of subqueries,views,joins are performed in SQL.
