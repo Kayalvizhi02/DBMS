@@ -14,7 +14,7 @@
 
 ### ER Diagram: 
 
-![BM Relational Schema](https://github.com/Kayalvizhi02/DBMS/assets/75413726/385f527c-64cd-461d-a443-1df399ed4d05)
+![Bank Management](https://github.com/Kayalvizhi02/DBMS/assets/75413726/bb3ea967-de8f-48f2-9bc9-898f2cb6c5f5)
 
 ### Relational model:
 
