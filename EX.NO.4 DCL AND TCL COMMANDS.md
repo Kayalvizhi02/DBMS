@@ -3,7 +3,7 @@
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
-# THEORY
+# THEORY:
 ## Data Control Language (DCL) commands
 * Data control language (DCL) is used to access the stored data.
 * It is mainly used for revoke and to grant the user the required access to a database.
@@ -118,10 +118,11 @@ COMMIT;
 
 
 ### QUERY:
+```sql
 
 ROLLBACK TO s1;
 
-
+```
 ### OUTPUT:
 
 
