@@ -93,31 +93,39 @@ SELECT ENAME, JOB, SAL FROM EMP WHERE SAL = (SELECT MIN(SAL) FROM EMP);
 
 ### QUERY:
 ```sql
-SELECT ENAME, JOB FROM EMP WHERE DEPTNO = 10 AND JOB IN (SELECT JOB FROM EMP WHERE DEPTNO = 30);
+SELECT ENAME, JOB FROM EMP WHERE DEPTNO = 10 AND JOB IN (SELECT JOB FROM EMP WHERE JOB = 'sales');
 ```
 ### OUTPUT:
 
-![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/27b36231-19e7-4022-af03-6f4e15a8a2d1)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/3b52cce3-3b4a-41ff-a2af-0f23362e7c24)
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
 ### QUERY:
 ```sql
 CREATE VIEW empv5 AS SELECT empno, ename, job FROM EMP WHERE deptno = 10;
+SELECT ename FROM empv5;
+
 ```
 ### OUTPUT:
 
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/f07b0106-9341-4e44-be21-9c1f848b61f3)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/25e97817-7be1-4354-8846-359ae0b249bc)
+
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
 ### QUERY:
 ```sql
 CREATE VIEW empv30 AS SELECT empno AS "Employee Number", ename AS "Employee Name", sal AS "Salary" FROM EMP WHERE deptno = 30;
+SELECT * FROM empv30;
+
 ```
 ### OUTPUT:
 
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/8b18b4cb-e4a2-48eb-aa72-0fa814b30ca0)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/82c26879-ba0d-4ceb-a7dd-b955da6d6b91)
+
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
