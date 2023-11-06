@@ -10,8 +10,8 @@
 5. End the begin section.
 
 ### Program:
-### Create employee table
-```
+### Create employee table:
+```sql
 CREATE TABLE customer (
   customerid NUMBER,
   customername VARCHAR(10),
@@ -23,7 +23,11 @@ INSERT INTO customer VALUES (1, 'Kayal', 'HR', 100000);
 INSERT INTO customer VALUES (2, 'Charu', 'Sales', 80000);
 select * from customer;
 ```
-### PLSQL Cursor code
+### Output:
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/750b25de-e1b7-4ecf-8eef-5a5bd8e05c5d)
+
+### PLSQL Cursor code:
 ```sql
 DECLARE
    CURSOR customer_cursor IS
