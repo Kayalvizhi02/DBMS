@@ -76,6 +76,9 @@ SELECT ENAME FROM EMP WHERE SAL > (SELECT SAL FROM EMP WHERE EMPNO = 7566);
 ```
 ### OUTPUT:
 
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/b209d923-e2cf-449e-a54a-32d9018c0526)
+
+
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
 ### QUERY:
@@ -83,6 +86,8 @@ SELECT ENAME FROM EMP WHERE SAL > (SELECT SAL FROM EMP WHERE EMPNO = 7566);
 SELECT ENAME, JOB, SAL FROM EMP WHERE SAL = (SELECT MIN(SAL) FROM EMP);
 ```
 ### OUTPUT:
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/34dadaa9-768d-4bc4-957a-40f225828782)
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
 
@@ -92,6 +97,7 @@ SELECT ENAME, JOB FROM EMP WHERE DEPTNO = 10 AND JOB IN (SELECT JOB FROM EMP WHE
 ```
 ### OUTPUT:
 
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/27b36231-19e7-4022-af03-6f4e15a8a2d1)
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
@@ -101,6 +107,8 @@ CREATE VIEW empv5 AS SELECT empno, ename, job FROM EMP WHERE deptno = 10;
 ```
 ### OUTPUT:
 
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/f07b0106-9341-4e44-be21-9c1f848b61f3)
+
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
 ### QUERY:
@@ -108,6 +116,8 @@ CREATE VIEW empv5 AS SELECT empno, ename, job FROM EMP WHERE deptno = 10;
 CREATE VIEW empv30 AS SELECT empno AS "Employee Number", ename AS "Employee Name", sal AS "Salary" FROM EMP WHERE deptno = 30;
 ```
 ### OUTPUT:
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/8b18b4cb-e4a2-48eb-aa72-0fa814b30ca0)
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
@@ -152,6 +162,7 @@ INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5003, 'Lauson
 SELECT s.name AS Salesman1, c.cust_name, c.city FROM Salesman1 s INNER JOIN Customer1 c ON s.city = c.city;
 ```
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/490908c6-fe69-44a5-9e54-d135c4f6538c)
 
 ### Q8) Write a SQL query to find salespeople who received commissions of more than 13 percent from the company. Return Customer Name, customer city, Salesman, commission.
 
@@ -161,6 +172,7 @@ SELECT s.name AS Salesman1, c.cust_name, c.city FROM Salesman1 s INNER JOIN Cust
 SELECT c.cust_name AS Customer_Name, c.city AS Customer_City, s.name AS Salesman, s.commission FROM Customer1 c JOIN Salesman1 s ON c.salesman_id = s.salesman_id WHERE s.commission > 0.13 ORDER BY s.name ASC;
 ```
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/519caea6-3a8b-4a25-8e84-f58711d67e6c)
 
 ### Q9) Perform Natural join on both tables
 
@@ -172,6 +184,7 @@ NATURAL JOIN Customer1;
 
 ```
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/d7e5a8db-3208-463a-a69b-c99f7168b819)
 
 ### Q10) Perform Left and right join on both tables
 
@@ -184,6 +197,9 @@ RIGHT JOIN Salesman1 ON Customer1.salesman_id = Salesman1.salesman_id;
 ```
 
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/34386d24-4c71-447f-a199-44f7a6bbeaa3)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/58bd582b-ee63-4d7d-87cf-1070576e9218)
+
 
 ## RESULT: 
 Thus the basics of subqueries,views,joins are performed in SQL.
