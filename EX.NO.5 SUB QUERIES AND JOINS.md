@@ -110,6 +110,7 @@ SELECT ename FROM empv5;
 ### OUTPUT:
 
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/f07b0106-9341-4e44-be21-9c1f848b61f3)
+
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/25e97817-7be1-4354-8846-359ae0b249bc)
 
 
@@ -124,6 +125,7 @@ SELECT * FROM empv30;
 ### OUTPUT:
 
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/8b18b4cb-e4a2-48eb-aa72-0fa814b30ca0)
+
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/82c26879-ba0d-4ceb-a7dd-b955da6d6b91)
 
 
@@ -206,6 +208,7 @@ RIGHT JOIN Salesman1 ON Customer1.salesman_id = Salesman1.salesman_id;
 
 ### OUTPUT:
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/34386d24-4c71-447f-a199-44f7a6bbeaa3)
+
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/58bd582b-ee63-4d7d-87cf-1070576e9218)
 
 
