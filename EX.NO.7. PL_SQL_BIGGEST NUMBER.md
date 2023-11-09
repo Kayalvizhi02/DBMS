@@ -1,4 +1,4 @@
-# Ex. No: 7 PL/SQL program -BIGGEST OF THREE NUMBERS  
+# EXP.NO 7: PL/SQL program -BIGGEST OF THREE NUMBERS  
 ### DATE: 
 ### AIM: 
 To create PL/SQL program to find biggest of three numbers.
