@@ -1,4 +1,4 @@
-# EXP.NO 7: PL/SQL program to find biggest of three numbers
+# EXP NO 7: PL/SQL program to find biggest of three numbers
 ### DATE: 
 ### AIM: 
 To create PL/SQL program to find biggest of three numbers.
