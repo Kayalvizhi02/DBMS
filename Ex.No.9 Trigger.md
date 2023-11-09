@@ -1,5 +1,5 @@
-# EXP NO 9: PL/SQL program using Triggers 
-### DATE: 
+# EXP NO 10: PL/SQL program using Triggers 
+### DATE: 18/10/23
 ### AIM: 
 To create PL/SQL program to display new and old salary of customer when before/ after updation takes place. 
 
