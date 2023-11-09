@@ -63,7 +63,6 @@ insert into employee (emp_id, name, address)values(4, 'Beulah', '567 Pine St');
 
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/18506561-f1dd-4785-8acd-f0206fc872e2)
 
-
 ### Q6)	Display the employee table and create a save point s2 .
 
 
