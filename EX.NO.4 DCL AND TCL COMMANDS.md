@@ -38,7 +38,7 @@ insert into employee(emp_id,name,address)values(3,'Charu','345 Oak st');
 ### OUTPUT:
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/6b8aa5c1-df56-43b8-9f6b-bc126865ff07)
 
-![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/dd37879e-e32d-4b0b-a13c-ce5f1895eefa)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/c2867600-c38b-4484-971f-059a60d69fa4)
 
 ### Q3) Start the transaction and create a save point s1.
 
