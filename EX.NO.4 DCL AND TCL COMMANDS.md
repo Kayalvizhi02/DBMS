@@ -87,7 +87,8 @@ UPDATE employee SET address = '101 Oak Ave' WHERE emp_id = 1;
 ### OUTPUT:
 ![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/c03a03da-6d9e-47ed-9706-fe60647f2e55)
 
-![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/d3f543c0-dc4d-4996-ae6b-78fd01880171)
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/c1bf8d8f-1f20-4405-b548-902805861f58)
+
 
 
 ### Q8) Display the employee table and rollback to  save point s2 
