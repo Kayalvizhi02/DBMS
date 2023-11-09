@@ -1,5 +1,5 @@
 # EXP NO 2: DATA DEFINITION LANGUGE COMMANDS 
-### DATE: 16/08/23
+
 ## AIM:
 To create a student database and execute DDL queries using SQL.
 
