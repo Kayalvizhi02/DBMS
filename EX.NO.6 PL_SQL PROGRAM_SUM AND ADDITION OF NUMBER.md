@@ -1,4 +1,4 @@
-# Exp.No: 6 PL/SQL program to perform addition and subtraction of two number 
+# EXP.NO 6: PL/SQL program to perform addition and subtraction of two number 
 ### DATE: 
 
 ### AIM: 
