@@ -1,5 +1,5 @@
 # EXP NO 9: PL/SQL program using Cursor 
-### DATE: 11/10/23
+
 ### AIM: 
 To create PL/SQL program to display the customer table 
 
