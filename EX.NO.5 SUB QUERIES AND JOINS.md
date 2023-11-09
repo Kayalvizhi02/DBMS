@@ -1,7 +1,7 @@
-# EX.NO.5 SubQueries, Views and Joins 
-### DATE
+# EX.NO 5 SubQueries, Views and Joins 
+### DATE:
 ## AIM:
-### To use SubQueries, Views and Joins in SQL 
+To use SubQueries, Views and Joins in SQL 
 ## Create employee Table
 ```sql
 CREATE TABLE EMP (EMPNO NUMBER(4) PRIMARY KEY,ENAME VARCHAR2(10),JOB VARCHAR2(9),MGR NUMBER(4),HIREDATE DATE,SAL NUMBER(7,2),COMM NUMBER(7,2),DEPTNO NUMBER(2));
