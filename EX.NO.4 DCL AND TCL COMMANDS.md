@@ -127,6 +127,7 @@ ROLLBACK TO s1;
 
 ```
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/f8081a63-72b9-4303-a9ec-789d9026fd4f)
 
 
 ### Q11)	Create a new user and grant access to any one database with "insert and update"
