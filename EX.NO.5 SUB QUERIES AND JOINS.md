@@ -133,9 +133,15 @@ SELECT * FROM empv30;
 
 ### QUERY:
 ```sql
-UPDATE empv5 SET sal = sal * 1.1 WHERE job = 'CLERK';
+UPDATE emp SET sal = sal * 1.1 WHERE job = 'CLERK';
+SELECT empno, ename, job, sal FROM emp WHERE job = 'CLERK';
+
 ```
 ### OUTPUT:
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/ba0b244b-7a38-4120-a555-705a6259ba5c)
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/519839c7-554c-412e-ab08-1d6f98d0e9c6)
+
 
 ## Create a Customer1 Table
 ```sql
