@@ -136,8 +136,8 @@ ROLLBACK TO s1;
 ### QUERY:
 ```sql
 
-CREATE USER new_user IDENTIFIED BY 'password';
-GRANT INSERT, UPDATE ON database_name.* TO new_user;
+CREATE USER new_user;
+GRANT INSERT, UPDATE ON database_name TO new_user;
 ```
 
 ### OUTPUT:
@@ -159,8 +159,9 @@ SHOW GRANTS FOR new_user;
 ### QUERY:
 ```sql
 
-REVOKE INSERT, UPDATE ON database_name.* FROM new_user;
-DROP USER new_user;
+SHOW GRANTS FOR new_user;
+REVOKE INSERT, UPDATE ON database_name FROM new_user;
+SHOW GRANTS FOR new_user;
 
 ```
 ### OUTPUT:
