@@ -137,10 +137,14 @@ ROLLBACK TO s1;
 ```sql
 
 CREATE USER new_user;
-GRANT INSERT, UPDATE ON database_name TO new_user;
+GRANT INSERT, UPDATE ON employee TO new_user;
 ```
 
 ### OUTPUT:
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/63f1d4b5-21e3-4752-92d8-ab00dfd65a02)
+
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/89be4d5a-89bb-4144-a563-70396086c343)
 
 
 ### Q12) Check the user access and display the result 
@@ -154,18 +158,20 @@ SHOW GRANTS FOR new_user;
 ```
 ### OUTPUT:
 
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/7aa875ee-5c66-471d-82a4-2558a0f0681f)
+
 ### Q13) Revoke the privillages.
 
 ### QUERY:
 ```sql
 
-SHOW GRANTS FOR new_user;
-REVOKE INSERT, UPDATE ON database_name FROM new_user;
+REVOKE INSERT, UPDATE ON employee FROM new_user;
 SHOW GRANTS FOR new_user;
 
 ```
 ### OUTPUT:
 
+![image](https://github.com/Kayalvizhi02/DBMS/assets/75413726/32135c8d-fcf2-4f57-9456-3d78ea1061e9)
 
 ## RESULT :
 Thus the basic TCL and DCL commands are executed.
